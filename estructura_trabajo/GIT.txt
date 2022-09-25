@@ -1,0 +1,21 @@
+COMANDOS GIT:
+init - inisializa un proyecto en git
+rm -f .git - se utiliza para borrar un archivo - extencion git
+rm -rf .git - se utiliza para borrar carpetas - extencion git (repositorio)
+git status - muestra los archivos en su estado de seguimiento 
+git add - + nombre del archivo.extencion -( ej config.txt)
+git add *.txt - agrega al area de trabajo todos los archivos .txt
+git commit - entras en ventana de comentario salir con esc despues shiff + :  wr(guardar cambio)  
+	despues shiff + : q - o hacer WQ en una sola linea
+git log - muestra la cantidad de cambios registrados -
+git log --oneline - muestra los cambios de forma corta -
+
+PARA DEFINIR UNA CONFIGURACION DE USUARIO:
+git config --global user.name " "
+git config --global user.email " "
+
+PARA VER LA CONFIGURACION  DE USUARIO:
+ git config -- global --get-regexp user
+
+PARA VER LA CONFIGURACION COMPLETA Y CREAR UN TXT:
+git config --list --show-origin > config.txt

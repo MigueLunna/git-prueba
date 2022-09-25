@@ -1,0 +1,30 @@
+Stagin area:
+	Es el area de control de cambios, tambien conocido como index
+	donde se evaluan las modificaciones y adiciones realizadas
+	en el working Directory
+
+Comandos:
+	Utilizaremos la linea de comando para agregar 
+	o remover del area de verificacion los elementos a los querramos
+	hacerle seguimiento o querramos ignorar
+
+Lista de comandos:
+GIT ADD "agregar archivo al stage"
+	git add <file> => agrega un archivo especifico
+	git add <folder/> => agrega el contenido de una carpeta
+	git add *.formato => agrega todos los archivo con el formato elegido
+	git add . => agrega todo el contenido del directorio actual
+GIT RM "Remueve elementos del Stage - si este no fue hecho commit"
+	ej: git rm --cached <file>
+
+GIT RESET "Restablece elementos de index" 
+	ej: git reset HEAD -- <file> remueve el elemento selecinao con un commit previo
+
+git diff <codigo de rama> => compara el puntero actual con una version anterior ( mostrados los cambios con letras verde)
+git diff HEAD~<numero> => colocamos la cantidad de versiones que queremos volver hacia atras 
+			para comparar con la vercion actual
+
+
+
+  
+	
