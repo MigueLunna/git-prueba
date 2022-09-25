@@ -24,7 +24,7 @@ git diff <codigo de rama> => compara el puntero actual con una version anterior 
 git diff HEAD~<numero> => colocamos la cantidad de versiones que queremos volver hacia atras 
 			para comparar con la vercion actual
 
-
+git push -u origin master
 
   
 	
