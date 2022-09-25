@@ -1,10 +1,11 @@
-COMANDOS GIT:
+COMANDOS GIT: git push -u origin master
 init - inisializa un proyecto en git
 rm -f <file> - se utiliza para borrar un archivo - no lleva la palabra git al cominenzo
 rm -rf <folder> - se utiliza para borrar carpetas - no lleva la palabra git al cominenzo
 git status - muestra los archivos en su estado de seguimiento 
 git add - + nombre del archivo.extencion -( ej config.txt)
 git add *.txt - agrega al area de trabajo todos los archivos .txt
+git add . => agrega todo el contenido del directorio actua
 git commit - entras en ventana de comentario salir con esc despues shiff + :  wr(guardar cambio)  
 	despues shiff + : q - o hacer WQ en una sola linea
 git log - muestra la cantidad de cambios registrados -
@@ -19,3 +20,26 @@ PARA VER LA CONFIGURACION  DE USUARIO:
 
 PARA VER LA CONFIGURACION COMPLETA Y CREAR UN TXT:
 git config --list --show-origin > config.txt
+
+GIT RM "Remueve elementos del Stage - si este no fue hecho commit"
+	ej: git rm --cached <file>
+
+GIT RESET "Restablece elementos de index" 
+	ej: git reset HEAD -- <file> remueve el elemento selecinao con un commit previo
+
+git diff <codigo de rama> => compara el puntero actual con una version anterior ( mostrados los cambios con letras verde)
+git diff HEAD~<numero> => colocamos la cantidad de versiones que queremos volver hacia atras 
+			para comparar con la vercion actual
+CLONAR REPOSITORIO:
+ git clone <url> + nombre de carpeta => crea una carpeta nueva con el repositorio clonado
+
+RAMAS:
+git branch => muestra las ramas existentes
+git branch + <nombre de la rama> => crea una nueva rama con el nombre elegido 
+git branch -m <nombre anterior> <nombre nuevo> => cambia el nombre de la rama
+git checkout <nombre de la rama que uno quiere ir> => cambia a la rama elegida
+git branch -d<nonbre de la rama> => con esto borramos una rama con su contenido, la rama no se borra si esta posicionado en la rama a borrar
+
+UNIFICAR RAMAS:
+git merge<rama origen> <rama destino> => unifica ramas, importante debo estar ubicado en la rama destino para recibir los cambios
+				lugo hacer git add / git commit
