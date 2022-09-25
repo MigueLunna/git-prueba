@@ -26,5 +26,8 @@ git diff HEAD~<numero> => colocamos la cantidad de versiones que queremos volver
 
 git push -u origin master
 
+CLONAR REPOSITORIO:
+ git clone <url> + nombre de carpeta => crea una carpeta nueva con el repositorio clonado
+
   
 	

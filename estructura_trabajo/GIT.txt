@@ -1,7 +1,7 @@
 COMANDOS GIT:
 init - inisializa un proyecto en git
-rm -f .git - se utiliza para borrar un archivo - extencion git
-rm -rf .git - se utiliza para borrar carpetas - extencion git (repositorio)
+rm -f <file> - se utiliza para borrar un archivo - no lleva la palabra git al cominenzo
+rm -rf <folder> - se utiliza para borrar carpetas - no lleva la palabra git al cominenzo
 git status - muestra los archivos en su estado de seguimiento 
 git add - + nombre del archivo.extencion -( ej config.txt)
 git add *.txt - agrega al area de trabajo todos los archivos .txt
